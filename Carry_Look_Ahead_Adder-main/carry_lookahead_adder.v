@@ -23,6 +23,6 @@ module carry_lookahead_adder(
     assign Cout = G[3] | (P[3] & C[3]);
 
     // Sum calculation
-    assign Sum = P ^ C;
+    assign Sum = P ^ Cin;
 
 endmodule
